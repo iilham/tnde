@@ -41,9 +41,21 @@
                     'items' => [
                         ['label' => 'Menu', 'options' => ['class' => 'header']],
                         ['label' => 'Dashboard', 'icon' => 'fa fa-dashboard', 'url' => ['/site']],
+                        [
+                            'label' => 'Master',
+                            'icon' => 'fa fa-cog',
+                            'url' => '#',
+                            'items' => [
+                                ['label' => 'Satuan Kerja', 'icon' => 'fa fa-circle', 'url' => ['/login'],],
+                                ['label' => 'Alamat', 'icon' => 'fa fa-circle', 'url' => ['/login'],],
+                                ['label' => 'Pegawai', 'icon' => 'fa fa-circle', 'url' => ['/login'],],
+                                ['label' => 'Dasar hukum', 'icon' => 'fa fa-circle', 'url' => ['/login'],],
+                                ['label' => 'Pembebanan Anggaran', 'icon' => 'fa fa-circle', 'url' => ['/login'],],
+                            ],
+                        ],
                         ['label' => 'Surat Masuk', 'icon' => 'fa fa-envelope-open', 'url' => ['/site']],
-                        ['label' => 'Surat Keluar', 'icon' => 'fa fa-envelope', 'url' => ['/site']],
                         ['label' => 'Surat Disposisi', 'icon' => 'fa fa-paper-plane', 'url' => ['/site']],
+                        ['label' => 'Surat Keluar', 'icon' => 'fa fa-envelope', 'url' => ['/site']],
                         [
                             'label' => 'Template Surat',
                             'icon' => 'fa fa-book',
@@ -55,17 +67,6 @@
                             ],
                         ],
                         [
-                            'label' => 'Master',
-                            'icon' => 'fa fa-cog',
-                            'url' => '#',
-                            'items' => [
-                                ['label' => 'Satuan Kerja', 'icon' => 'fa fa-circle', 'url' => ['/login'],],
-                                ['label' => 'Subject Matter', 'icon' => 'fa fa-circle', 'url' => ['/login'],],
-                                ['label' => 'Dasar hukum', 'icon' => 'fa fa-circle', 'url' => ['/login'],],
-                                ['label' => 'Pembebanan Anggaran', 'icon' => 'fa fa-circle', 'url' => ['/login'],],
-                            ],
-                        ],
-                        [
                             'label' => 'CKP Online',
                             'icon' => 'fa fa-desktop',
                             'url' => '#',
@@ -74,7 +75,6 @@
                                 ['label' => 'CKP Realisasi', 'icon' => 'fa fa-circle', 'url' => ['/login'],],
                             ],
                         ],
-                        ['label' => 'Pegawai', 'icon' => 'fa fa-users fa-lg', 'url' => ['/site']],
                         ['label' => 'Atur Pengguna', 'icon' => 'fa fa-users', 'url' => ['/site']],
 //                    ['label' => 'Login', 'url' => ['site/login'], 'visible' => Yii::$app->user->isGuest],
 //                    [
